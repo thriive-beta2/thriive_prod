@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="./script.js"></script>
+  </head>
+  <body>
+    <script>
+      function clickHandler() {
+        if (KnowlarityMeetExternalAPI) {
+          var domain = "meet.knowlarity.com";
+          var options = {
+            roomName: "thriive-3d8e16/second_room-fcf283",
+            width: 700,
+            height: 700,
+            parentNode: document.getElementById("container-frame"),
+          };
+        }
+        try {
+          var startMeeting = KnowlarityMeetExternalAPI.createMeeting;
+
+          globalThis.api = startMeeting(domain, options);
+          console.log("typeof api::", typeof api);
+
+          //adding listner
+          
+          api.addListner("participantLeft", function(e){console.log('left');});
+          console.log('inside');
+
+        } catch (e) {
+          console.log("Error while calling the External API methods");
+          console.error("Error::", e);
+        }
+      }
+
+      function enableListner(){
+        api.addListner("participantLeft", function(e){console.log('left');});
+      }
+
+    </script>
+    <div id="container">
+      <div id="container-sub">
+        <button id="primary" onclick="clickHandler()">Start Meeting</button>
+      </div>
+      <div id="container-frame"></div>
+    </div>
+  </body>
+</html>

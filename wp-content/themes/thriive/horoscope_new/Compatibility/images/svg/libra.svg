@@ -1,0 +1,49 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #149343;
+      }
+
+      .cls-2 {
+        fill: #127cbf;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <circle class="cls-1" cx="122.1" cy="25" r="24.7"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <circle class="cls-2" cx="25" cy="25" r="24.8"/>
+    </clipPath>
+  </defs>
+  <g>
+    <circle class="cls-1" cx="122.1" cy="25" r="24.7"/>
+    <g class="cls-3">
+      <rect class="cls-1" x="44" y="-33.3" width="163.2" height="108.8"/>
+    </g>
+  </g>
+  <g>
+    <g>
+      <circle class="cls-2" cx="25" cy="25" r="24.8"/>
+      <g class="cls-4">
+        <rect class="cls-2" x="-53" y="-33.3" width="163.2" height="108.8"/>
+      </g>
+    </g>
+    <g>
+      <path class="cls-5" d="M7.5,30.6a53.8,53.8,0,0,1,8.7-1.8,88.5,88.5,0,0,1,8.9-.5,86.5,86.5,0,0,1,8.8.5,63.7,63.7,0,0,1,8.7,1.7c-2.9.1-5.9,0-8.8,0H16.3Z"/>
+      <path class="cls-5" d="M42.6,24.5H32.4l-.2-.5a7.7,7.7,0,0,0-2.8-3.6,7.8,7.8,0,0,0-8.6,0,7.6,7.6,0,0,0-2.9,3.5l-.2.6H7.5L9.9,24l2.4-.5,4.8-.7-.7.5a8.8,8.8,0,0,1,3.2-4.6,9.4,9.4,0,0,1,2.6-1.4,9.2,9.2,0,0,1,2.9-.4,8.8,8.8,0,0,1,5.4,1.8,9.2,9.2,0,0,1,3.3,4.7l-.8-.6,4.9.7,2.3.5Z"/>
+    </g>
+  </g>
+</svg>

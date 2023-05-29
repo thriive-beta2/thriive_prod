@@ -1,0 +1,2505 @@
+h1 {
+text-align: center;
+font-size: 3em;
+}
+
+.messages > div:last-child {
+  margin-bottom: 20px;
+}
+
+.chat-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-actions > div {
+  width: 25px;
+  text-align: center;
+}
+
+.chat-actions i {
+  margin-right: 0;
+}
+
+#chat-timer {
+  width: 100%;
+  height: 30px;
+  padding: 5px 10px;
+  background: #039be5;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#chat-timer span {
+  color: #b9e9ff;
+}
+
+#show-img-preview {
+  width: 100%;
+  height: calc(100% - 95px);
+  position: absolute;
+  top: 45px;
+  left: 0;
+  background: rgba(0,0,0,0.4);
+  display: none;
+  overflow: hidden;
+}
+
+#show-img-preview .action-bar {
+  display: flex;
+  background: #039be5;
+  padding: 10px;
+  font-size: 18px;
+  align-items: center;
+}
+
+#show-img-preview span {
+  color: #efefef;
+}
+
+#show-img-preview i{
+  color: #efefef;
+  cursor: pointer;
+}
+
+#show-img-preview #img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+}
+
+#img-container img {
+  width: 100%;
+}
+
+
+.content {
+display: block;
+width: 100%;
+background: rgb(215, 215, 215);
+padding: 0;
+overflow: hidden;
+margin: 0 auto;
+
+}
+.content *{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+font-family: 'Oxygen', sans-serif;
+}
+.simple-marquee-container *{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-o-box-sizing:border-box;
+box-sizing:border-box;
+font-family: 'Oxygen', sans-serif;
+}
+.simple-marquee-container {
+width: 100%;
+background-color:#fff;
+float: left;
+display: inline-block;
+overflow: hidden;
+box-sizing: border-box;
+height: 45px;
+position: relative;
+cursor: pointer;
+color:black;
+}
+
+.simple-marquee-container .marquee-sibling {
+padding: 0;
+background-color:#fff;
+width: 20%;
+height: 45px;
+line-height: 42px;
+font-size: 12px;
+font-weight: normal;
+color: #ffffff;
+text-align: center;
+float: left;
+left: 0;
+z-index: 2000;
+}
+
+.simple-marquee-container .marquee, .simple-marquee-container *[class^="marquee"] {
+display: inline-block;
+white-space: nowrap;
+position:absolute;
+}
+
+.simple-marquee-container .marquee{
+margin-left: 25%;
+}
+
+.simple-marquee-container .marquee-content-items{
+display: inline-block;
+padding: 5px;
+margin: 0;
+height: 45px;
+position: relative;
+}
+
+.simple-marquee-container .marquee-content-items li{
+display: inline-block;
+line-height: 35px;
+color: black;
+margin-left: 0.5em;
+}
+
+.simple-marquee-container .marquee-content-items li:after{
+content: "|";
+margin: 0 0.5em;
+}
+
+.zod{
+color:#ee4347;
+font-size:24px;
+}
+
+.luck{
+line-height:1.6;
+color:#153483;
+font-size:20px;
+}
+
+.mar{
+font-family: 'Oxygen', sans-serif;
+width:100%;
+overflow: hidden;
+margin: 0 auto;
+background-color: #fff;
+text-align: center;
+padding-top: 10px;
+
+}
+.horo-marq{
+display: flex;
+}
+
+.horo-marq .horo{
+margin-left: 2rem;
+float: left;
+margin-right: 0.5rem;
+color:#ee4347;
+font-size:24px;
+
+}
+.horo-marq .horo-cont{
+display: block;
+line-height:1.6;
+color:#153483;
+font-size:20px;
+}
+
+
+/*////////////////////////////////////*/
+/*[START] styles for numerology*/
+/*////////////////////////////////////*/
+
+
+.num-form{
+width:50%;
+padding:0px 0px 10px 0px;
+margin:0 auto;
+text-align: left;
+justify-content: center;
+
+}
+
+.num-form hr{
+width:100%;
+}
+.num-form h2{
+letter-spacing: 0.1rem;
+margin-bottom: 2rem;
+text-align: center;
+padding: 0;
+margin: 0;
+}
+.num-form label,input{
+font-size: 18px;
+margin: 0 auto;
+}
+.num-form label{
+margin-left: 115px;
+color:#153483;
+margin-bottom: 5px;
+}
+.num-form-container h2{
+}
+.num-form #input_name{
+border:1px solid #7E7E7E;
+width:70%;
+clear: both;
+display: block;
+margin:0 auto;
+font-size:18px;
+border-radius: 7px;
+padding:5px 10px;
+}
+.num-form #dt{
+width:25%;
+outline: none;
+box-shadow: none;
+}
+.dt{
+display:flex;
+justify-content: space-between;
+width:100%;
+margin:0 auto;
+}
+#sub{
+width:30%;
+margin:0 auto;
+margin-top: 2rem;
+}
+
+.sub{
+margin-top: 1.2rem !important;
+}
+.s-dt{
+font-size: 16px;
+width: 25%;
+border:1px solid #7E7E7E;
+border-radius: 7px;
+padding:5px 10px;
+}
+.s-dt option{
+font-size: 16px;
+width:25%;
+}
+.main-dt{
+margin-top: 0.5rem;
+width:70%;
+}
+.hidden{
+display:none;
+}
+.head-cont{
+color:#153483;
+font-size:1.2rem;
+text-align: center;
+}
+.head-break{
+font-size: 16px;
+color:#153483;
+text-align: center;
+}
+
+
+
+/*[START] Numerology report*/
+
+.report-container h2{
+font-size: 22px;
+font-weight: 500;
+text-align: center;
+}
+
+.report-container{
+width:30%;
+margin:0 auto;
+}
+
+.report-container a {
+text-decoration: none;
+color:#000;
+}
+
+.num-box-container{
+width:100%;
+display:flex;
+flex-wrap: wrap;
+margin:0 auto;
+justify-content: center;
+vertical-align: middle;
+font-family: 'Noto Sans JP', sans-serif;
+
+
+
+}
+.num-box{
+
+flex-shrink: 0;
+width:8rem ;
+text-align: center;
+line-height: 1.2rem;
+position:relative;
+height:115px;
+margin-top:6px;
+margin-bottom: -20px;
+
+
+
+}
+
+.inner{
+font-size: 30px;
+height:50%;
+width:100%;
+position: absolute;
+top:0%;
+}
+
+.main-p{
+padding-top:3.5rem;
+color: #153483;
+margin:0 auto;
+}
+/*Above is old*/
+.box-table{
+margin: 0 auto;
+background-image: radial-gradient(black 20%,white 65%);
+margin-top:0;
+border: none !important;
+width:50%;
+border-collapse: separate;
+border-spacing: 2px;
+}
+.box-table td{
+background-color: #fff;
+border: 1px solid #fff;
+}
+.head-num{
+border:1px solid;
+border-radius: 50%;
+margin: 0 auto;
+}
+.inner-text{
+color:#282560 !important;
+font-size:14px;
+margin-top: -10px;
+
+}
+.ask-ques{
+text-align: center;
+border:solid 1px;
+border-radius: 10px;
+width:30%;
+margin: 0 auto;
+}
+.ask-ques h2{
+font-size: 32px;
+margin-top: 0.5rem;
+}
+}
+.ask-ques p{
+font-size: 18px !important;
+}
+
+
+/*[END] Numerology report*/
+
+/*[START Numerology Personalised]*/
+
+
+body{
+font-family: 'Work Sans', sans-serif;
+}
+
+.report-wrapper{
+width:50%;
+margin:0 auto;
+position:relative;
+}
+
+.report-head{
+margin-top: 2rem;
+width:100%;
+text-align: center;
+}
+
+.report-head h2{
+font-size:1.5rem;
+width:100%;
+
+}
+
+.report-number div{
+width: 5rem;
+height: 5rem;
+border: 1px solid;
+position: relative;
+border-radius: 50%;
+margin: 0 auto;
+margin-top: 2rem;
+}
+
+.report-number div p{
+position: absolute;
+color: #feae60 !important;
+width: 100%;
+height: 100%;
+line-height: 5rem;
+text-align: center;
+font-size: 3rem;
+}
+
+.report-number .alphanumeric{
+font-size: 2rem;
+text-align: center;
+margin-top: 0.5rem;
+color: #6e0092 !important;
+}
+.report-text p{
+margin-top: 2rem;
+font-family: 'IBM Plex Sans', sans-serif;
+line-height: 2rem;
+font-size: 16px;
+padding: 0px 20px 0px 20px;
+}
+
+.back-btn{
+width: 5rem;
+height: 3rem;
+border: none;
+outline: none;
+background: transparent;
+position: absolute;
+top: -10px;
+}
+
+
+/*[END] Numerology Personalised*/
+
+/*////////////////////////////////////*/
+/*[END] styles for numerology*/
+/*////////////////////////////////////*/
+
+
+/*////////////////////////////////////*/
+/*[START] styles for zodiac compatibility*/
+/*////////////////////////////////////*/
+
+.main-container{
+width:100%;
+text-align: center;
+margin:0 auto;
+}
+.main-container h3{
+margin-bottom:1rem;
+}
+.chosen-zod h1{
+color:#e74248 !important;
+}
+
+.btncom{
+-moz-border-radius: 0 15px 0 15px;
+-webkit-border-radius: 0 15px 0 15px;
+-ms-border-radius: 0 15px 0 15px;
+border-radius: 0 15px 0 15px;
+background: #282560;
+color: #fff;
+display: block;
+margin: 0 auto;
+padding: 5px;
+text-align: center;
+box-shadow: 0 0 6px #0000008a;
+font-size: 12px !important;
+}
+
+.select_sign{
+font-size: 14px;
+margin-top: 10px;
+}
+
+.chosen-zod img{
+width:60px !important;
+}
+.first-zod{
+display: inline-block;
+overflow: hidden;
+width:8.5rem;
+height: max-content;
+text-align: center;
+font-size: 16px;
+}
+.first-zod img{
+clear:both;
+border-radius: 50%;
+width:60px;
+}
+
+
+.first-zod input{
+display: none;
+}
+.plus-sign{
+font-size: 2rem;
+padding-bottom:2.5rem;
+font-weight: bold;
+
+}
+.chosen-zod button{
+font-size: 18px;
+width:20%;
+margin-bottom: 10px;
+}
+.plus{
+width:max-content !important;
+}
+.zod-list{
+margin-top: 0rem;
+}
+
+.zod-list-element{
+width:45%;
+padding-bottom: 1rem;
+}
+
+.percent-compatibility{
+
+}
+.comp-report{
+font-size:16px;
+padding: 0px 15px;
+text-align: left;
+}
+.btnresetzod{
+width:30%;
+background-color: transparent;
+outline: none;
+border:none;
+font-size: 12px !important;
+font-weight:400;
+}
+.zod_sign{
+font-size: 18px;
+margin-top: 5px;
+margin-bottom: 0px;		}
+
+.ask-ques h2 {
+font-size: 24px;
+margin-top: 0.5rem;
+}
+.comp-report{
+padding-left: 100px;
+padding-right: 100px;
+}
+.pi{
+width:3rem;
+height:3rem;
+border-radius: 50%;
+background: conic-gradient(
+#C70039 70deg,
+#FF8EB7 0
+);
+position: relative;
+padding-top: 0.5rem;
+}
+
+.chart-inner{
+width:2rem;
+height:2rem;
+background-color: #fff;
+border-radius: 50%;
+margin: 0 auto;
+}
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for zodiac compatibility*/
+/*////////////////////////////////////*/
+
+
+/*////////////////////////////////////*/
+/*[START] styles for chat             */
+/*////////////////////////////////////*/
+
+		.main-messages{
+      font-family: sans-serif;
+      width: 340px;
+      height: 60%;
+			background-color: #F7F4F9;
+			position:fixed;
+			bottom:0%;
+			right:10px;
+			border-top-left-radius: 10px;
+			border-top-right-radius: 10px;
+      overflow: hidden;
+      box-shadow:0px 0px 4px rgba(0,0,0,0.2);
+      z-index: 99999999;
+		}
+		.messages{
+			overflow-y: scroll;
+			overflow-x: hidden;
+			width:100%;
+			height:76%;
+			position:relative;
+			background-color: #eee;
+			padding: 1em 2em;
+		}
+
+    .messages>div{
+      position: relative;
+    }
+
+		.message-left{
+			margin-left:0;
+			margin-top: 15px;
+			background-color: #fff;
+			width:max-content;
+			max-width: 85%;
+			min-width: 80%;
+			padding: 10px 10px 5px 10px;
+			border-radius:10px;
+			color:#555;
+
+		}
+
+    .message-left::after{
+			border-top: 15px solid #fff;
+      border-left: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: -15px;
+		}
+
+		.message-left img{
+			max-width:200px;
+      border-radius: 5px;
+		}
+
+		.message-right{
+			margin-right: 0;
+			margin-top: 15px;
+			margin-left: auto;
+			width:max-content;
+			max-width: 85%;
+			min-width: 80%;
+			background-color: #E5EAED;
+			padding: 10px 10px 5px 10px;
+			border-radius:10px;
+			color:#222;
+		}
+
+    .message-right::after {
+      border-top: 15px solid #e5eaed;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      content: '';
+      position: absolute;
+      top: 10px;
+      right: -15px;
+    }
+
+		.message-right img{
+			max-width:200px;
+      border-radius: 5px;
+		}
+
+		.msg{
+			position: absolute;
+			bottom:0px;
+			width:100%;
+			background-color: #E5EAED;
+			padding:5px;
+			height:3rem;
+			overflow: hidden;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.messages-header{
+			background-color: #0288d1;
+			position:sticky;
+			top:0;
+			display:flex;
+			width: 100%;
+			padding:0 10px;
+      height: 45px;
+			justify-content: space-between;
+      align-items: center;
+		}
+		.file_attatch{
+			display:none;
+		}
+		#click_attatch{
+			/* width: 30px; */
+			height: 2.5rem;
+			background-color: #F7F4F9;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			border: none;
+			position: relative;
+			top: 0px;
+			border-top-right-radius: 0rem;
+			border-bottom-right-radius: 3rem;
+			cursor: pointer;
+			padding: 0;
+			padding-right: 5px;
+			text-align: center;
+		}
+		#click_attatch:focus{
+			border:none;
+			outline:none;
+		}
+
+		#click_attatch > i {
+			transform: rotate(90deg);
+			font-size: 25px;
+			color: #888;
+		}
+
+		.emoji_icon{
+			display: inline-block;
+			border-top-left-radius: 5rem;
+      display: inline-block;
+      position: relative;
+      align-self: center;
+      border-bottom-left-radius: 5rem;
+      background-color: #F7F4F9;
+      cursor: pointer;
+      border: 0px;
+			max-width: 30px;
+			text-align: center;
+			padding: 0;
+			padding-left: 5px;
+		}
+		.emoji_icon img{
+			position: relative;
+    		top: 10px !important;
+		}
+		.emoji_container{
+			display:none;
+			position:fixed;
+			bottom:50px;
+			padding:5px;
+			background-color: #F7F4F9;
+			width:15rem;
+		}
+		.emojis{
+			display:inline-block;
+			cursor: pointer;
+		}
+		.input_div{
+			background-color: #F7F4F9;
+	    border-radius: 18px;
+	    width: max-content;
+	    display: flex;
+	    height: 2.4rem;
+	    overflow: hidden;
+	    margin-right: 10px;
+		}
+		#send{
+			border-radius: 50%;
+			height: 40px;
+			width: 40px;
+			color: #fff;
+			background-color: #039be5;
+			border: none;
+			outline: none;
+			text-align: center;
+			font-size: 14px;
+		}
+		#send:hover:enabled{
+			background-color: #fff;
+			cursor: pointer;
+		}
+		#send:hover:enabled .fa-paper-plane{
+			color: #4F0475;
+			background-color: #fff;
+		}
+		#ind-message{
+			border: none;
+		    outline: none;
+		    background-color: #F7F4F9;
+		    position: relative;
+		    height: 100%;
+		    width:12rem;
+		    max-width: 12rem;
+			font-size: 1rem;
+		}
+		.right_date{
+			text-align: right;
+			font-size: 10px;
+			margin:2px;
+			color: #8f979c;
+		}
+		.chat_options {
+      display:block;
+      position: fixed;
+      background-color: #FFF;
+      right: 12px;
+      display: none;
+      z-index: 1;
+      margin-top: -30px;
+      min-width: 100px;
+		}
+
+    .chat_options::before {
+      content: '';
+      position: absolute;
+      right: 35px;
+      top: -5px;
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 8px solid white;
+    }
+
+		#chat_options_table td{
+			padding:10px !important;
+		}
+
+
+/*////////////////////////////////////*/
+/*[END] styles for chat               */
+/*////////////////////////////////////*/
+
+
+/*////////////////////////////////////*/
+/*[START] styles for video call widget*/
+/*////////////////////////////////////*/
+
+
+.call_now_btn{
+	width: 10rem;
+    background-color: #19194A !important;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for video call widget*/
+/*////////////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////*/
+/*[START] styles for daily horoscope  */
+/*////////////////////////////////////*/
+
+
+	.daily_horo{
+		text-align: center;
+		width:70%;
+		margin:0 auto;
+	}
+	.daily_horo a div{
+		margin-left:0.2rem;
+		margin-right: 0.2rem;
+	}
+	.zod_desc_cont {
+	    width: 100%;
+	    overflow-wrap: break-word;
+	    font-size: 18px;
+	}
+	.post_avatar{
+		border-radius: 50%;
+		border: 2px solid;
+	}
+	.zod_desc_card{
+		width:10rem;
+		margin-top: 10px;
+	}
+	.zod_desc_logo{
+		width:3rem;
+	}
+	.question_mark_img{
+		width:5rem;
+		margin-top: -32px;
+	}
+	.day_catg{
+		display:none;
+	}
+	.todays_horo_head{
+		font-size: 22px;
+		color:#000;
+		display: inline-block;
+	}
+	.chosse_zodiac{
+		color:#000;
+	}
+	.ask_ques_daily{
+		text-align: center;
+		font-size: 22px !important;
+		color:#000;
+	}
+	.ask_ques_daily h2{
+		text-align: center;
+		font-size: 22px !important;
+		color:#000;
+	}
+	.daily_horo_page_btn{
+		width:170px !important;
+		font-size:16px !important;
+	}
+	#horo_content{
+		padding-right: 15px;
+		padding-left: 15px;
+		line-height: 1.4;
+	}
+
+
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for daily horoscope  */
+/*////////////////////////////////////*/
+
+
+
+@media screen and (max-width:767px) and (min-width:320px){
+
+	.input_div {
+		width: 75%;
+	}
+
+	#send{
+		font-size: 12px;
+	}	
+  #show-img-preview {
+    height: calc(100% - 110px)
+  }
+
+
+.mar{
+font-family: 'Oxygen', sans-serif;
+width:100%;
+overflow: hidden;
+margin: 0 auto;
+background-color: #fff;
+text-align: center;
+padding-top: 10px;
+
+}
+.horo-marq{
+display: flex;
+}
+
+.horo-marq .horo{
+margin-left: 2rem;
+float: left;
+margin-right: 0.5rem;
+color:#ee4347;
+font-size:18px;
+
+}
+.horo-marq .horo-cont{
+display: block;
+line-height:1.4;
+color:#153483;
+font-size:16px;
+}
+
+.zod{
+margin-left: 1rem;
+margin-right: 0.5rem;
+color:#ee4347;
+font-size:18px;
+}
+
+.luck{
+line-height:1.4;
+color:#153483;
+font-size:16px;
+}
+
+.simple-marquee-container .marquee-content-items li{
+display: inline-block;
+line-height: 35px;
+color: black;
+margin-left: 0;
+}
+
+.simple-marquee-container .marquee-content-items li:after{
+content: "|";
+margin-left: 0.5rem;
+}
+
+
+/*////////////////////////////////////*/
+/*[START] styles for numerology*/
+/*////////////////////////////////////*/
+
+
+body{
+width:100%;
+}
+.num-form{
+width:100%;
+text-align: left;
+}
+.num-form-container h2{
+font-size:24px !important;
+font-weight: 600;
+margin:0;
+text-align: center !important;
+}
+.num-form label,input{
+font-size: 1.4rem;
+}
+.num-form label{
+margin-left: 1.2rem;
+color:#153483;
+}
+.num-form #input_name{
+border:1px solid #7E7E7E;
+width:90%;
+display: block;
+margin:0 auto;
+border-radius: 10px;
+padding:5px 5px;
+}
+.num-form #input_name::placeholder{
+font-size: 1.5rem;
+color: black;
+}
+.num-form #dt{
+width:25%;
+outline: none;
+box-shadow: none;
+}
+.dt{
+display:flex;
+justify-content: space-between;
+width:90%;
+margin:0 auto;
+flex-wrap: wrap;
+}
+.sub{
+font-size: 16px !important;
+width:30%;
+margin:0 auto;
+margin-top: 20px !important;
+}
+.s-dt{
+font-size: 16px;
+width: 30%;
+border:1px solid #7E7E7E;
+border-radius: 10px;
+background-color: #fff;
+padding:5px 5px;
+}
+.main-dt{
+margin-left:20px;
+margin-right:0;
+}
+.s-dt option{
+font-size: 16px;
+width:25%;
+background-color: #fff;
+}
+.form-submit input{
+font-size: 1.5rem;
+width:30%;
+}
+#input_name::placeholder{
+font-size:1.5rem;
+}
+.head-break{
+font-size: 18px;
+color:#153483;
+text-align: center;
+}
+.head-cont{
+color:#153483;
+font-size:16px;
+text-align: center;
+}
+
+
+
+/*[START] Numerology report*/
+
+
+.report-container h2{
+font-size: 22px;
+font-weight:500;
+}
+
+.report-container{
+width:100%;
+}
+
+.report-container a {
+text-decoration: none;
+color:#000;
+}
+
+.num-box-container{
+width:100%;
+display:flex;
+flex-wrap: wrap;
+margin:0 auto;
+justify-content: center;
+vertical-align: middle;
+font-family: 'Noto Sans JP', sans-serif;
+margin-top: 7px;
+
+}
+.num-box{
+
+flex-shrink: 0;
+width:8rem ;
+text-align: center;
+line-height: 1.4rem;
+position:relative;
+font-weight: ;
+height:100px;
+margin-top: 7px;
+margin-bottom: -20px;
+
+}
+
+.inner{
+font-size: 32px;
+font-weight: 500;
+height:50%;
+width:100%;
+position: absolute;
+top:0%;
+}
+
+.main-p{
+padding-top:3rem;
+padding-bottom:-10px;
+color:#282560 !important;
+}
+
+.main-p p{
+padding-top:3rem;
+color:#282560 !important;
+}
+
+/*Above is old*/
+
+.head-num{
+border:1px solid;
+border-radius: 50%;
+margin: 0 auto;
+width:110px;
+}
+.ask-ques{
+width:95%;
+}
+
+.ask-ques h2{
+font-size: 25px;
+}
+
+.ask-ques p{
+font-size: 16px !important;
+margin-top: -8px;
+}
+
+.challenge{
+color:#0b7e85 !important;
+font-size:30px;
+font-weight:400;
+letter-spacing: 2px;
+}
+
+/*[END] Numerology report*/
+
+
+
+/*[START] Numerology Personalised*/
+
+.report-wrapper{
+width:100%;
+margin:0 auto;
+padding:15px 0px 15px 0px;
+}
+.report-head{
+margin-top: 2rem;
+width:100%;
+text-align: center;
+}
+.report-head h2{
+font-size:1.5rem;
+width:100%;
+
+}
+.report-number div{
+width:5rem;
+height:5rem;
+border: 1px solid;
+position: relative;
+border-radius:50%;
+margin:0 auto;
+margin-top: 2rem;
+}
+.report-number div p{
+position: absolute;
+color:#feae60 !important;
+width:100%;
+height: 100%;
+line-height: 5rem;
+text-align: center;
+font-size: 3rem;
+
+}
+
+.report-number .alphanumeric{
+font-size: 2rem;
+text-align: center;
+margin-top: 0.5rem;
+color:#6e0092 !important;
+}
+.report-text p{
+margin-top: 2rem;
+font-family: 'IBM Plex Sans', sans-serif;
+line-height: 2rem;
+font-size: 16px;
+padding: 0px 20px 0px 20px;
+}
+
+/*[END] Numerology Personalised*/
+
+/*////////////////////////////////////*/
+/*[END] styles for numerology*/
+/*////////////////////////////////////*/
+
+/*////////////////////////////////////*/
+/*[START] styles for zodiac compatibility*/
+/*////////////////////////////////////*/
+
+
+.main-container{
+width:100%;
+}
+.btncom{
+-moz-border-radius: 0 15px 0 15px;
+-webkit-border-radius: 0 15px 0 15px;
+-ms-border-radius: 0 15px 0 15px;
+border-radius: 0 15px 0 15px;
+background: #282560;
+color: #fff;
+display: block;
+margin: 0 auto;
+padding: 5px;
+text-align: center;
+box-shadow: 0 0 6px #0000008a;
+font-size: 12px !important;
+}
+
+.btnresetzod{
+font-size:14px !important;
+}
+.first-zod{
+width:40%;
+}
+.zod_sign{
+font-size: 16px;
+margin-top: 5px;
+margin-bottom: 0px;
+}
+.zod_dob   {
+font-size: 14px;
+margin-top: 5px;
+}
+.plus-first-zod{
+width:max-content !important;
+}
+.chosen-zod button{
+font-size: 18px;
+width:40%;
+margin-bottom: 10px;
+}
+.chosen-zod h1{
+font-size: 26px;
+color:#e74248;
+}
+.zod-list-element{
+width:95%;
+}
+.percent-compatibility{
+font-size: 1.3rem;
+font-weight: 800;
+margin-top:10px;
+}
+#first-selection{
+width:30%;
+}
+#second-selection{
+width:30%;
+}
+.zod-list{
+margin-top: 0rem;
+}
+.zod-list h3{
+font-size: 22px;
+}
+.ask-ques h2{
+font-size: 18px;
+}
+.comp-report{
+font-size:16px;
+padding-left: 15px;
+padding-right: 15px;
+text-align: left;
+}
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for zodiac compatibility*/
+/*////////////////////////////////////*/
+
+
+/*////////////////////////////////////*/
+/*[START] styles for chat             */
+/*////////////////////////////////////*/
+
+#chat-timer {
+  margin-top: 45px;
+}
+
+	.chat_options{
+				top:2.2rem;
+        margin-top: 10px;
+        right: 0;
+		}
+		#hide_chat_box{
+			/*display:none;*/
+		}
+		.main-messages{
+			height: 100.1%;
+		    z-index: 99999;
+		    width: 100%;
+		    right: -1px;
+		}
+		.messages-header{
+			position:absolute;
+			z-index: 1;
+			}
+		.messages{
+			width: 100%;
+			top: 0%;
+			height: calc(100% - 140px);
+		}
+		.emoji_container{
+			width:100%;
+			z-index: 0 !important;
+			bottom:55px;
+		}
+		#ind-message{
+			width: max-content;
+		}
+		.msg{
+			height:4rem;
+		}
+		.input_div{
+		    margin-top: .5rem;
+		}
+		#send{
+		   margin-top: .5rem;
+		}
+
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for chat             */
+/*////////////////////////////////////*/
+
+
+
+/*////////////////////////////////////*/
+/*[START] styles for daily horoscope  */
+/*////////////////////////////////////*/
+
+
+
+			.daily_horo{
+				width:100%;
+			}
+
+	iframe{
+		width:100% !important;
+		/* height: 50% !important; */
+		margin: 0 auto;
+	}
+	.zod_desc_logo{
+		width:2rem;
+		padding-right:10px;
+	}
+	.question_mark_img{
+		width:5rem;
+		margin-top: -32px;
+	}
+	.daily_horo_page_btn{
+		width:165px !important;
+		font-size:16px !important;
+	}
+	.expert_tarot_font{
+		font-size: 16px;
+	}
+
+
+
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for daily horoscope  */
+/*////////////////////////////////////*/
+
+
+
+
+
+}
+
+
+
+
+/*////////////////////////////////////*/
+/*[START] styles for SEX THERAPY  */
+/*////////////////////////////////////*/
+
+
+
+
+
+.sex-therapy-body{
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+        width:50%;
+        margin: 0 auto;
+    }
+    .sex-therapy-banner{
+background-image: url(sex-therapy-assets/assets/images/Banner.jpg);
+    height: 16rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 12px;
+    }
+	.love-therapy-banner{
+background-image: url(love-therapy-assets/assets/images/love-main-banner.jpg);
+    height: 16rem;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 12px;
+    }
+
+.sex-therapy-banner-con{
+    padding: 65px 0px 0px 81px;
+}
+
+    .sex-therapy-banner-con .line-01{
+font-size: 27px;
+    color: #26265F;
+    font-weight: 600;
+    margin: 0;
+    }
+
+    .sex-therapy-banner-con .line-02{
+    font-size: 97px;
+    font-weight: 500;
+    color: #26265F;
+    margin: 0;
+    }
+    .sex-therapy-banner-con .line-02 img{
+    width: 87px;
+    margin-left: -15px;
+    margin-top: -10px;
+    }
+    .sex-therapy-prices{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    }
+
+    .sex-therapy-prices div{    
+    width: 7.5rem;
+    font-size: 24px;
+    color: #15579E;
+    font-weight: 600;
+    text-align: center;
+    }
+
+    .sex-therapy-prices p{
+    margin: 0;
+    font-size: 12px;
+    color: grey;
+    -webkit-text-stroke-width: 0;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    }
+
+    .btn_book_now{
+
+    }
+
+    .width-100{
+    width: 90%;
+    padding: 2%;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .width-100 button{
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 15px;
+    background-color: #282560;
+    color: #fff;
+    letter-spacing: 1px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    }
+
+    .sex-therapy-page-heads p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    color: #27265F;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+    margin: 0;
+    }
+
+    .sex-therapy-page-heads img{
+            width: 1rem;
+
+    }
+
+    .sex-therapy-conditions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   width: 100%;
+    margin: 0 auto;
+    }
+    .sex-therapy-conditions div{
+    width: 13rem;
+    margin: 0;
+    border-radius: 0px;
+    }
+
+        .sex-therapy-conditions p{
+margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    }
+
+    .sex-therapy-conditions div section{
+    width: 95%;
+    height: 7rem;
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+
+    .sex-therapy-conditions div img{
+    width: 100%;
+    height: 100%;
+    }
+
+    .sex-therapy-conditions .condition-01 section{
+            background-image: url(sex-therapy-assets/assets/images/Low%20libido.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-02 section{
+            background-image: url(sex-therapy-assets/assets/images/sexless%20marriage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-03 section{
+            background-image: url(sex-therapy-assets/assets/images/Erectile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-04 section{
+            background-image: url(sex-therapy-assets/assets/images/Thriive%20Sex%20Therapy%20Page_Final_all%20images%20embedded-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-05 section{
+            background-image: url(sex-therapy-assets/assets/images/Thriive%20Sex%20Therapy%20Page_Final_all%20images%20embedded-06.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }   
+	.sex-therapy-conditions .condition-06 section{
+            background-image: url(love-therapy-assets/assets/images/couple-counselling.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-07 section{
+            background-image: url(love-therapy-assets/assets/images/love-compatibility.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-08 section{
+            background-image: url(love-therapy-assets/assets/images/attracting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-09 section{
+            background-image: url(love-therapy-assets/assets/images/gettingover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .sex-therapy-session-desc{
+        margin: 0 auto;
+    }
+    .sex-therapy-session-desc p{
+        margin:0;
+    }
+    .sex-therapy-session-desc-row{
+        display: flex;
+        justify-content: center;
+    }
+    .sex-therapy-session-desc-row div{
+    width: 45%;
+    height: 9rem;
+    margin: 5px;
+    border-radius: 10px;
+    }
+    .sex-therapy-session-desc-elem-head{
+    color: #E94444;
+    font-size: 18px;
+    font-weight: 600;
+    }
+    .sex-therapy-session-desc-elem-subhead{
+font-size: 13px;
+    font-weight: 600;
+    }
+    .sex-therapy-session-desc-elem-cont{
+        font-size: 13px;
+    }
+
+    .sex-therapy-session-desc-elem1{
+            background-image: url(sex-therapy-assets/assets/images/Session%201.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+	.love-therapy-session-desc-elem1{
+            background-image: url(love-therapy-assets/assets/images/session1.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+    .sex-therapy-session-desc-elem4{
+            background-image: url(sex-therapy-assets/assets/images/Session%202.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .sex-therapy-session-desc-elem5{
+            background-image: url(sex-therapy-assets/assets/images/Session%203.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .sex-therapy-session-desc-elem3{
+          text-align: right;
+    }
+
+    .sex-therapy-card{
+        width:75%;
+    background-color: #805290;
+    margin: 0 auto;
+    border-radius: 10px;
+    }
+    .sex-therapy-card-row{
+display: flex;
+    color: #fff;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    }
+    .sex-therapy-card-head{
+            color: #fff;
+    }
+    .sex-therapy-card-row img{
+        width:15px;
+    }
+    .sex-therapy-card-row-elem1{
+width: 45%;
+    margin: 5px;
+    font-size: 14px;
+    color: #fff;
+    }
+    .sex-therapy-card-row-elem2{
+width: 45%;
+    height: 9rem;
+    background-image: url(sex-therapy-assets/assets/images/002-05.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    }
+
+    .sex-therapy-card button{
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    background-color: #fff;
+    color: #282560;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5px;
+    }
+    .sex-therapy-desc{
+        margin:0 auto;
+    }
+    .sex-therapy-desc-row{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+    .sex-therapy-desc-row p{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #282560;
+
+    }   
+    .sex-therapy-desc-row div{
+    width: 45%;
+    margin: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    color: #282560;
+    }
+    .sex-therapy-desc-row-elem1{
+    background-image: url(sex-therapy-assets/assets/images/Why%20Sex%20Therapy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .sex-therapy-desc-row-elem4{
+    background-image: url(sex-therapy-assets/assets/images/Sexual%20Wellness%20expert.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }   
+    .sex-therapy-desc-row-elem3{
+        text-align: right;
+    }
+    .sex-therapy-help{
+        margin: 0 auto;
+        background-image: url(sex-therapy-assets/assets/images/bg01-07.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+	.love-therapy-help{
+        margin: 0 auto;
+        background-image: url(love-therapy-assets/assets/images/love-banner.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .sex-therapy-help-row{
+        width:98%;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .sex-therapy-help-row-elem1{
+        width: 50%;
+        font-size: 12px;
+    }
+    .sex-therapy-at-thriive{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    }
+    .sex-therapy-at-thriive div{
+        width:30%;
+        text-align: center;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
+    }   
+
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .sex-therapy-body{
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Ubuntu', sans-serif;
+        width: 100%;
+    }
+    .sex-therapy-banner{
+    background-image: url(sex-therapy-assets/assets/images/Banner.jpg);
+    height: 11rem;
+    width: 94%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 12px;
+    }
+	.love-therapy-banner{
+    background-image: url(love-therapy-assets/assets/images/love-main-banner.jpg);
+    height: 11rem;
+    width: 94%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    border-radius: 12px;
+    }
+
+.sex-therapy-banner-con{
+    padding: 54px 0px 0px 23px;
+}
+
+    .sex-therapy-banner-con .line-01{
+font-size: 20px;
+    color: #26265F;
+    font-weight: 600;
+    margin: 0;
+    }
+
+    .sex-therapy-banner-con .line-02{
+    font-size: 55px;
+    font-weight: 500;
+    color: #26265F;
+    margin: 0;
+    }
+    .sex-therapy-banner-con .line-02 img{
+    width: 45px;
+    margin-left: -15px;
+    margin-top: -10px;
+    }
+    .sex-therapy-prices{
+display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    }
+
+    .sex-therapy-prices div{    
+width: 7.5rem;
+    /* height: 7rem; */
+    /* background-color: red; */
+    font-size: 18px;
+    color: #15579E;
+    font-weight: 600;
+    /* -webkit-text-stroke-width: 4px; */
+    text-align: center;
+    }
+
+    .sex-therapy-prices p{
+    margin: 0;
+    font-size: 12px;
+    color: grey;
+    -webkit-text-stroke-width: 0;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    }
+
+    .btn_book_now{
+
+    }
+
+    .width-100{
+width: 90%;
+    padding: 5%;
+    text-align: center;
+    margin: 0 auto;
+    }
+
+    .width-100 button{
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 15px;
+    background-color: #282560;
+    color: #fff;
+    letter-spacing: 1px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;  
+    }
+
+    .sex-therapy-page-heads p{
+    display: flex;
+    width: 100%;
+    /* text-align: center; */
+    justify-content: center;
+    color: #27265F;
+    font-size: 18px;
+    /* -webkit-text-stroke-width: 1px; */
+    font-weight: 600;
+    align-items: center;
+    margin:0;
+    /* letter-spacing: 2px;*/
+    }
+
+    .sex-therapy-page-heads img{
+            width: 1rem;
+
+    }
+
+    .sex-therapy-conditions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: unset;
+    margin: unset;
+    }
+    .sex-therapy-conditions div{
+    width: 8rem;
+    margin: 0;
+    border-radius: 0px;
+    /* overflow: hidden;*/
+    }
+
+        .sex-therapy-conditions p{
+margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    }
+
+    .sex-therapy-conditions div section{
+    width: 95%;
+    height: 5rem;
+    /* margin: 10px; */
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+
+    .sex-therapy-conditions div img{
+    width: 100%;
+    height: 100%;
+    }
+
+    .sex-therapy-conditions .condition-01 section{
+            background-image: url(sex-therapy-assets/assets/images/Low%20libido.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-02 section{
+            background-image: url(sex-therapy-assets/assets/images/sexless%20marriage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-03 section{
+            background-image: url(sex-therapy-assets/assets/images/Erectile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-04 section{
+            background-image: url(sex-therapy-assets/assets/images/Thriive%20Sex%20Therapy%20Page_Final_all%20images%20embedded-03.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+	
+    .sex-therapy-conditions .condition-05 section{
+            background-image: url(sex-therapy-assets/assets/images/Thriive%20Sex%20Therapy%20Page_Final_all%20images%20embedded-06.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }   
+	.sex-therapy-conditions{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: unset;
+    margin: unset;
+    }
+    .sex-therapy-conditions div{
+    width: 8rem;
+    margin: 0;
+    border-radius: 0px;
+    /* overflow: hidden;*/
+    }
+
+        .sex-therapy-conditions p{
+margin: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    }
+
+    .sex-therapy-conditions div section{
+    width: 95%;
+    height: 5rem;
+    /* margin: 10px; */
+    border-radius: 7px;
+    overflow: hidden;
+    margin: 0 auto;
+    }
+
+    .sex-therapy-conditions div img{
+    width: 100%;
+    height: 100%;
+    }
+
+    .sex-therapy-conditions .condition-06 section{
+            background-image: url(love-therapy-assets/assets/images/couple-counselling.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-07 section{
+            background-image: url(love-therapy-assets/assets/images/love-compatibility.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-08 section{
+            background-image: url(love-therapy-assets/assets/images/attracting.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .sex-therapy-conditions .condition-09 section{
+            background-image: url(love-therapy-assets/assets/images/gettingover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .sex-therapy-session-desc{
+        width: 100%;
+        margin: unset;
+    }
+    .sex-therapy-session-desc p{
+        margin:0;
+    }
+    .sex-therapy-session-desc-row{
+        display: flex;
+        justify-content: center;
+    }
+    .sex-therapy-session-desc-row div{
+    width: 45%;
+    height: 7rem;
+    margin: 5px;
+    border-radius: 10px;
+    }
+    .sex-therapy-session-desc-elem-head{
+        color: #E94444;
+    font-size: 16px;
+    font-weight: 600;
+    }
+    .sex-therapy-session-desc-elem-subhead{
+        font-size: 11px;
+    font-weight: 600;
+    }
+    .sex-therapy-session-desc-elem-cont{
+        font-size: 11px;
+    }
+
+    .sex-therapy-session-desc-elem1{
+            background-image: url(sex-therapy-assets/assets/images/Session%201.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .sex-therapy-session-desc-elem4{
+            background-image: url(sex-therapy-assets/assets/images/Session%202.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .sex-therapy-session-desc-elem5{
+            background-image: url(sex-therapy-assets/assets/images/Session%203.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+	.love-therapy-session-desc-elem1{
+            background-image: url(love-therapy-assets/assets/images/session1.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .love-therapy-session-desc-elem4{
+            background-image: url(love-therapy-assets/assets/images/session2.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    .love-therapy-session-desc-elem5{
+            background-image: url(love-therapy-assets/assets/images/session3.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+    .sex-therapy-session-desc-elem3{
+          text-align: right;
+    }
+
+    .sex-therapy-card{
+        width: 95%;
+    background-color: #805290;
+    margin: 0 auto;
+    border-radius: 10px;
+    }
+    .sex-therapy-card-row{
+display: flex;
+    color: #fff;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+    }
+    .sex-therapy-card-head{
+            color: #fff;
+    }
+    .sex-therapy-card-row img{
+        width:15px;
+    }
+    .sex-therapy-card-row-elem1{
+width: 45%;
+    margin: 5px;
+    font-size: 12px;
+    color: #fff;
+    }
+    .sex-therapy-card-row-elem2{
+    width: 45%;
+    height: 5rem;
+    background-image: url(sex-therapy-assets/assets/images/002-05.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    }
+
+    .sex-therapy-card button{
+    width: 6rem;
+    height: 2rem;
+    font-size: 12px;
+    background-color: #fff;
+    color: #282560;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 5px;
+    }
+    .sex-therapy-desc{
+        width: 100%;
+        margin: unset;
+    }
+    .sex-therapy-desc-row{
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    }
+    .sex-therapy-desc-row p{
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+    color:#282560;
+
+    }   
+    .sex-therapy-desc-row div{
+    width: 45%;
+    height: 12rem;
+    margin: 5px;
+    font-size: 10px;
+    border-radius: 10px;
+    color:#282560;
+    }
+    .sex-therapy-desc-row-elem1{
+    background-image: url(sex-therapy-assets/assets/images/Why%20Sex%20Therapy.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .sex-therapy-desc-row-elem4{
+    background-image: url(sex-therapy-assets/assets/images/Sexual%20Wellness%20expert.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }   
+    .sex-therapy-desc-row-elem3{
+        text-align: right;
+    }
+    .sex-therapy-help{
+        width:100%;
+        background-image: url(sex-therapy-assets/assets/images/bg01-07.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .sex-therapy-help-row{
+        width:98%;
+        margin:0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .sex-therapy-help-row-elem1{
+        width: 50%;
+        font-size: 12px;
+    }
+    .sex-therapy-at-thriive{
+        width:100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .sex-therapy-at-thriive div{
+        width:30%;
+        text-align: center;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 500;
+    }   
+}
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for SEX THERAPY  */
+/*////////////////////////////////////*/
+
+
+
+
+
+
+/*////////////////////////////////////*/
+/*[START] styles for SEX THERAPY Appointment Summary  */
+/*////////////////////////////////////*/
+
+
+	.appointment-summary-card{
+	width: 35%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F6F7FF;
+    border-radius: 10px;
+    padding: 10px;
+	}
+	.appointment-summary-card p{
+		    width: 45%;
+    margin: 5px;
+    font-size: 14px;
+	}
+	.summtxt{
+		font-size: 24px;
+    text-align: center;
+    width: 100%;
+	}
+	.apppointment-summary-card-aligin-right{
+		text-align: right;
+	}
+	.appointment-summary-confirm-btn{
+		    background-color: #153483;
+    color: #fff;
+    font-family: "Work Sans",Rupee_Foradian,sans-serif;
+    padding: 2% 5%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid;
+    font-size: 14px;
+	}
+	.appointment-summary-hr{
+	width: 75%;
+    border-bottom: solid 1px;
+    margin:5px;
+	}
+
+
+
+@media (min-width: 320px) and (max-width: 660px) {	
+	.appointment-summary-card{
+	width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+	}
+	.appointment-summary-card p{
+		    width: 45%;
+    margin: 5px;
+    font-size: 14px;
+	}
+	.summtxt{
+		font-size: 24px;
+    text-align: center;
+	}
+	.apppointment-summary-card-aligin-right{
+		text-align: right;
+	}
+	.appointment-summary-confirm-btn{
+		    background-color: #153483;
+    color: #fff;
+    font-family: "Work Sans",Rupee_Foradian,sans-serif;
+    padding: 2% 5%;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 1px solid;
+    font-size: 14px;
+	}
+	.appointment-summary-hr{
+width: 75%;
+    border-bottom: solid 1px;
+    margin:5px;
+	}
+}
+
+
+/*////////////////////////////////////*/
+/*[END] styles for SEX THERAPY Appointment Summary  */
+/*////////////////////////////////////*/
+
+
+
+
+/*////////////////////////////////////*/
+/*[START] styles for Sex Therapy Therapist Listing */
+/*////////////////////////////////////*/
+
+
+
+
+
+
+    .sex-therapy-therapist-card-container{
+            width: 95%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: solid 1px #25275F;
+    margin: 0 auto;
+    }
+    .sex-therapy-therapist-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sex-therapy-therapist-card-row{
+        width:100%;
+    }
+
+    .sex-therapy-therapist-card-row p{
+        margin: 0;
+    }
+
+    .sex-therapy-therapist-card-row1{
+        /*background-color: #25275F;*/
+        padding-bottom:3.5rem;
+
+    }
+    .sex-therapy-therapist-card-tname{
+        color:#25275F;
+        font-size: 24px;
+        font-weight: 500;
+        text-align: center;
+        padding: 10px 0px 5px 0px;
+    }
+    .sex-therapy-therapist-card-therapy{
+        color:#25275F;
+        font-size: 12px;
+        font-weight: 300;
+        text-align: center;
+        padding: 0px 0px 10px 0px;
+    }
+    .sex-therapy-therapist-card-row2{
+        text-align: center; 
+        margin-top: -3.5rem;
+
+    }
+    .sex-therapy-therapist-card-row2 img{
+        border-radius: 50%;
+        width: 7rem;
+        height: 7rem;
+    }
+
+    .sex-therapy-therapist-card-about-therapist{        
+    padding-left: 16px;
+    }
+
+    .sex-therapy-therapist-card-about-therapist-head{
+            text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    }
+    .sex-therapy-therapist-card-about-therapist-cont{
+        text-align: left;
+        font-size: 14px;
+    }
+    .sex-therapy-therapist-card-about-therapist-exp{
+        padding-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    }
+.sex-therapy-therapist-card-row3 button {
+    padding: 7px;
+    border: solid 1px #25275F;
+    outline: none;
+    border-radius: 10px;
+    font-weight: 500;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #25275F;
+}
+    .sex-therapy-therapist-card-row3{
+        text-align: center;
+    }
+
+
+
+/*////////////////////////////////////*/
+/*[END] styles for Sex Therapy Therapist Listing */
+/*////////////////////////////////////*/

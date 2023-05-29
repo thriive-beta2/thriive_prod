@@ -1,0 +1,73 @@
+<html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+	<script>
+		window.addEventListener("message", (e) => {
+			try {
+				const data = e.data;
+				const obj = JSON.parse(data);
+				if (obj?.method === "message") {
+					console.log("POSTIS triggers message", obj);
+				}
+			} catch (err) {
+				console.log(err);
+			}
+		});
+
+	</script>
+	<script>
+		function createFrame(source) {
+			frame = document.createElement('iframe');
+			frame.setAttribute('src', encodeURI(source));
+			frame.style.height = "100%";
+			frame.style.width = "100%";
+			frame.style.position = 'absolute';
+			frame.style.top = '0';
+			frame.style.left = '0';
+			frame.setAttribute('allow', 'camera; microphone; fullscreen; display-catpure; autoplay')
+			return frame;
+		}
+
+		function onSubmit() {
+			var x = document.getElementById('_roomName').value;
+			if (x) {
+				container = document.getElementById('container_iframe');
+				var url = new URL(x, 'https://meetings.knowlarity.com/room/');
+				container.append(createFrame(url.href));
+			} else {
+				alert('please enter room name')
+			}
+		}
+
+	</script>
+
+<style type="text/css">
+	#container_iframe{
+		width: 100% !important;
+		height: 100vh !important;
+	}
+</style>
+	<div id="main" style="display: flex; flex-direction: column;">
+		<p>
+			Enter room name and hit submit to start the meeting.
+		</p>
+		<div style="display: flex">
+			<div>
+				<label>Enter room name: </label>
+				<input id="_roomName"></input>
+			</div>
+			<div>
+				<button id="submit" onClick="onSubmit()">Submit</button>
+			</div>
+		</div>
+		<div id="container_iframe">
+		</div>
+	</div>
+</body>
+
+</html>

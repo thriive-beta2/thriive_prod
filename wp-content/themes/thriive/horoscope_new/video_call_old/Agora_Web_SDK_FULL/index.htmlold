@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Video Call -- Agora</title>
+  <link rel="stylesheet" href="./vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="./index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style type="text/css">
+    #join-form{
+      display:none;
+    }
+    #local-player{
+    position: absolute;
+    width: 75px;
+    height: 110px;
+    bottom: 2%;
+    right: 3%;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+    #remote-playerlist{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    }
+    .player{
+      width: 100%;
+    height: 100vh;
+    }
+    .player-name{
+      display: none;
+    }
+    .end_button{
+    width: 100%;
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    bottom: 5%;
+    }
+    .end_button button{
+    background-image: url(https://beta1.thriive.in/wp-content/themes/thriive/horoscope_new/New%20directory/Agora_Web_SDK_FULL/End-Call.svg);
+    background-position: center;
+    background-size: contain;
+    width: 4rem;
+    background-repeat: no-repeat;
+    height: 3.2rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    }
+
+
+    .thriive_logo{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: #fff;
+    }
+    
+  </style>
+</head>
+<body>
+
+
+
+  <div id="success-alert-with-token" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> Joined room successfully. </span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div id="success-alert-with-token" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulations!</strong><span> Joined room successfully. </span>
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
+  <div class="container">
+    <form id="join-form">
+      <div class="row join-info-group">
+          <div class="col-sm">
+            <p class="join-info-text">AppID</p>
+            <input id="appid" type="text" placeholder="enter appid" required>
+            <p class="tips">If you don`t know what is your appid, checkout <a href="https://docs.agora.io/en/Agora%20Platform/terms?platform=All%20Platforms#a-nameappidaapp-id">this</a></p>
+          </div>
+          <div class="col-sm">
+            <p class="join-info-text">Token(optional)</p>
+            <input id="token" type="text" placeholder="enter token">
+            <p class="tips">If you don`t know what is your token, checkout <a href="https://docs.agora.io/en/Agora%20Platform/terms?platform=All%20Platforms#a-namekeyadynamic-key">this</a></p>
+          </div>
+          <div class="col-sm">
+            <p class="join-info-text">Channel</p>
+            <input id="channel" type="text" placeholder="enter channel name" required>
+            <p class="tips">If you don`t know what is your channel, checkout <a href="https://docs.agora.io/en/Agora%20Platform/terms?platform=All%20Platforms#channel">this</a></p>
+          </div>
+      </div>
+
+      <div class="button-group">
+        <button id="join" type="submit" class="btn btn-primary btn-sm">Join</button>
+        <button id="leave" type="button" class="btn btn-primary btn-sm" disabled>Leave</button>
+      </div>
+    </form></div>
+
+    
+        <div style="display:flex;">
+        <div id="remote-playerlist"></div>       
+        <div id="local-player" class="player">
+        <p id="local-player-name" class="player-name"></p>
+        </div>
+        </div>
+        <div class="thriive_logo"><img src="https://beta1.thriive.in/wp-content/themes/thriive/assets/images/newsoulimg/svglogo.svg"></div>
+        <div class="end_button">
+          <button onclick="end_call()"></button>
+        </div>
+
+  <script src="./vendor/jquery-3.4.1.min.js"></script>
+  <script src="./vendor/bootstrap.bundle.min.js"></script>
+  <script src="./AgoraRTC_N-4.2.1.js"></script>
+  <script src="./index.js"></script>
+  <script type="text/javascript">
+      var end = document.querySelector('.end_button');
+      var status = 0;
+      var time_spent = 0;
+      function check_end(){
+      let action = 'check';
+      var channel = document.querySelector('#channel').value;
+      $.post('video_functions.php',{channel:channel, action:action, status:status, time_spent:time_spent}, function(data){console.log(data);status = 1;time_spent = time_spent+2;
+        if(data == 1){
+          location.href = "https://beta1.thriive.in/my-account-page";
+        }
+      });
+      }
+      function end_call(){
+        let action = 'end';
+        let channel = document.querySelector('#channel').value;
+        $.post('video_functions.php', {channel:channel,action:action}, function(data){});
+      }
+      setInterval('check_end()', 2000);
+  </script>
+</body>
+</html>
